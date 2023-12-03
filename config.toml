@@ -1,24 +1,31 @@
-logging-to-file = true        # enables logging of every patch process to a seperate file
-enable-magisk-update = true   # set this to false if you do not want to receive updates for the module in magisk app
+[Messenger]
+apkmirror-dlurl = "https://apkmirror.com/apk/facebook-2/messenger/"
 
-# add 'enabled = false' for not patching a specific app or remove it from the config
-# see https://github.com/MatadorProBr/revanced-extended-magisk-module/blob/main/CONFIG.md for more detailed explanations
-
-# you can use rvmm-config-gen to generate a config
+[Tiktok]
+apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/"
 
 [YouTube]
-build-mode = "both"
-excluded-patches = "'Custom branding icon Revancify Blue' 'Custom branding name YouTube'"
-included-patches = "'Add splash animation' 'MaterialYou'"
-version = "auto"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+rv-brand = "inotia00 ReVanced"
+apkmirror-arch = "arm64-v8a"
+build-mode = "module"
+included-patches = "'Add splash animation' 'Custom playback speed' 'Disable shorts on startup' 'Enable external browser' 'Enable minimized playback' 'Enable open links directly' 'Enable wide search bar' 'Hide channel watermark' 'Hide crowdfunding box' 'Hide general ads' 'Hide video ads' 'MaterialYou' 'Return YouTube Dislike' 'Sanitize sharing links' 'SponsorBlock' 'Spoof app version' 'Spoof device dimensions' 'Spoof player parameters' 'Swipe controls'"
+exclusive-patches = true
 
-[Music]
-build-mode = "both"
-excluded-patches = "'Custom branding icon Revancify Blue' 'Custom branding name YouTube Music'"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-apkmirror-arch = "both"
+[Twitch]
+apkmirror-dlurl = "https://apkmirror.com/apk/twitch-interactive-inc/twitch/"
+
+[Twitter]
+apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
 
 [Reddit]
-enabled = false
-apkmirror-dlurl = "https://www.apkmirror.com/apk/redditinc/reddit"
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit/"
+
+[Instagram]
+apkmirror-dlurl = "https://apkmirror.com/apk/instagram/instagram-instagram/"
+
+[Music]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
+
